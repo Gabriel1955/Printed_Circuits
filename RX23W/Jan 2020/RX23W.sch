@@ -64,8 +64,6 @@ F 3 "" H 5300 2800 50  0001 C CNN
 	1    5300 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 7750 3750 8850
 $Comp
 L power:VCC #PWR017
 U 1 1 5E4795ED
