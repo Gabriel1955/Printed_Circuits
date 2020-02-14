@@ -120,7 +120,7 @@ U 1 1 5E4198D9
 P 8500 1200
 F 0 "C3" V 8711 1246 50  0000 L CNN
 F 1 "0.47uF" V 8632 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8500 1200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8500 1200 50  0001 C CNN
 F 3 "~" H 8500 1200 50  0001 C CNN
 	1    8500 1200
 	-1   0    0    1   
@@ -331,7 +331,7 @@ U 1 1 5DFF1693
 P 4200 2200
 F 0 "SW1" H 4200 2485 50  0000 C CNN
 F 1 "SW_Push" H 4200 2394 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CHS-01A_W5.08mm_P1.27mm_JPin" H 4200 2400 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-3000P-B" H 4200 2400 50  0001 C CNN
 F 3 "~" H 4200 2400 50  0001 C CNN
 	1    4200 2200
 	1    0    0    -1  
@@ -414,17 +414,6 @@ Wire Wire Line
 Wire Wire Line
 	5250 2450 5250 2200
 $Comp
-L Jumper:Jumper_3_Bridged12 JP2
-U 1 1 5E88C18C
-P 4900 1400
-F 0 "JP2" H 4900 1604 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 4900 1513 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 4900 1400 50  0001 C CNN
-F 3 "~" H 4900 1400 50  0001 C CNN
-	1    4900 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small_US R3
 U 1 1 5E89F60E
 P 4350 1400
@@ -458,10 +447,6 @@ F 3 "~" H 5650 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4450 1400 4650 1400
-Wire Wire Line
-	5150 1400 5550 1400
-Wire Wire Line
 	5750 1400 6400 1400
 Wire Wire Line
 	6050 2450 5650 2450
@@ -473,8 +458,6 @@ Wire Wire Line
 	5300 2400 5300 2050
 Wire Wire Line
 	5300 2050 4900 2050
-Wire Wire Line
-	4900 2050 4900 1550
 Wire Wire Line
 	4250 1400 3850 1400
 Wire Wire Line
@@ -971,10 +954,6 @@ Wire Wire Line
 	7950 5050 8350 5050
 Wire Wire Line
 	6450 5050 5800 5050
-Wire Wire Line
-	7050 5050 6650 5050
-Wire Wire Line
-	7750 5050 7550 5050
 $Comp
 L Device:R_Small_US R12
 U 1 1 5EBBFE7D
@@ -997,19 +976,6 @@ F 3 "~" H 7850 5050 50  0001 C CNN
 	1    7850 5050
 	0    1    1    0   
 $EndComp
-$Comp
-L Jumper:Jumper_3_Bridged12 JP3
-U 1 1 5EBBFE6A
-P 7300 5050
-F 0 "JP3" H 7300 5254 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 7300 5163 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 7300 5050 50  0001 C CNN
-F 3 "~" H 7300 5050 50  0001 C CNN
-	1    7300 5050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7300 4650 7300 4900
 $Comp
 L power:GND #PWR032
 U 1 1 5EBF7698
@@ -1065,8 +1031,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 3250 5950 3400
 Wire Wire Line
-	3800 4050 3600 4050
-Wire Wire Line
 	4700 4050 4900 4050
 $Comp
 L power:GND #PWR014
@@ -1078,17 +1042,6 @@ F 2 "" H 4900 4150 50  0001 C CNN
 F 3 "" H 4900 4150 50  0001 C CNN
 	1    4900 4150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_3_Bridged12 JP1
-U 1 1 5ED167C2
-P 4050 4050
-F 0 "JP1" H 4050 4254 50  0000 C CNN
-F 1 "Jumper_3_Bridged12" H 4050 4163 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 4050 4050 50  0001 C CNN
-F 3 "~" H 4050 4050 50  0001 C CNN
-	1    4050 4050
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small_US R10
@@ -1112,8 +1065,6 @@ F 3 "~" H 3500 4050 50  0001 C CNN
 	1    3500 4050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4500 4050 4300 4050
 Wire Wire Line
 	4900 4050 4900 4150
 Wire Wire Line
@@ -1263,4 +1214,55 @@ Wire Wire Line
 	6050 3800 6050 3650
 NoConn ~ 6050 3450
 NoConn ~ 6900 3600
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E46681E
+P 4900 1200
+F 0 "J2" V 4864 1012 50  0000 R CNN
+F 1 "Conn_01x03" V 4773 1012 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 4900 1200 50  0001 C CNN
+F 3 "~" H 4900 1200 50  0001 C CNN
+	1    4900 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 1400 5550 1400
+Wire Wire Line
+	4900 1400 4900 2050
+Wire Wire Line
+	4450 1400 4800 1400
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5E4A43D4
+P 7300 5250
+F 0 "J4" V 7172 5430 50  0000 L CNN
+F 1 "Conn_01x03" V 7263 5430 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 7300 5250 50  0001 C CNN
+F 3 "~" H 7300 5250 50  0001 C CNN
+	1    7300 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5E4A5268
+P 4050 4250
+F 0 "J3" V 3922 4430 50  0000 L CNN
+F 1 "Conn_01x03" V 4013 4430 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 4050 4250 50  0001 C CNN
+F 3 "~" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 4650 7300 5050
+Wire Wire Line
+	7400 5050 7750 5050
+Wire Wire Line
+	6650 5050 7200 5050
+Wire Wire Line
+	4050 3900 4050 4050
+Wire Wire Line
+	4150 4050 4500 4050
+Wire Wire Line
+	3600 4050 3950 4050
 $EndSCHEMATC
